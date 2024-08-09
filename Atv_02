@@ -1,0 +1,13 @@
+def soma_pares(minimo, maximo):
+    soma = 0
+
+    for numero in range(minimo, maximo + 1):
+        if numero % 2 == 0:
+            soma += numero
+    return soma
+
+minimo = 50
+maximo = 100
+
+resultado = soma_pares(minimo, maximo)
+print(f"A soma de todos os números pares entre {minimo} e {maximo} é: {resultado}")
