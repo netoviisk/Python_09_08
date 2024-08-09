@@ -1,0 +1,26 @@
+def sep_numeros(lista):
+    numero_pos = []
+    numero_neg = []
+
+    for numeros in lista:
+        if numeros >= 0:
+            numero_pos.append(numeros)
+
+        else:
+            numero_neg.append(numeros)
+
+    return numero_neg, numero_pos
+
+lista = list()
+i = int(input("A Lista dever conter quantos numeros? "))
+r = 0
+
+while r < i:
+    num = int(input("Digite o Número da Lista: "))
+    lista.append(num)
+    r += 1
+
+num_pos, num_neg = sep_numeros(lista)
+print("Lista: ", lista)
+print("Numeros Positivos: ", num_pos)
+print("Numeros Negativos: ", num_neg)
